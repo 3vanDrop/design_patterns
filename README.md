@@ -29,14 +29,12 @@ A collection of five fundamental object-oriented design patterns implemented in 
 │   ├── factory_pattern.py
 │   ├── strategy_pattern.py
 │   └── decorator_pattern.py
-├── tests
-│   ├── test_singleton_pattern.py
-│   ├── test_observer_pattern.py
-│   ├── test_factory_pattern.py
-│   ├── test_strategy_pattern.py
-│   └── test_decorator_pattern.py
-├── main.py
-└── readme.py
+└── tests
+    ├── test_singleton_pattern.py
+    ├── test_observer_pattern.py
+    ├── test_factory_pattern.py
+    ├── test_strategy_pattern.py
+    └── test_decorator_pattern.py
 ```
 
 ## Design Patterns
@@ -109,14 +107,6 @@ from resources.decorator_pattern import ConcreteComponent, ConcreteDecoratorA, C
 component = ConcreteComponent()
 decorated = ConcreteDecoratorB(ConcreteDecoratorA(component))
 print(decorated.operation())  # DecoratorB(DecoratorA(ConcreteComponent))
-```
-
-## Setup and Usage
-
-### Generate Code
-Run the following to generate todos los m�dulos y tests:
-```bash
-python3 main.py
 ```
 
 ### Running Tests
